@@ -11,7 +11,7 @@ export default defineConfig({
     tailwindcss(),
   ],
   build: {
-    outDir: 'dist', // ubah hasil build ke dist agar dikenali vercel
-    emptyOutDir: true,
+    outDir: 'dist',      // <-- penting
+    emptyOutDir: true,   // bersihkan folder dist sebelum build
   },
 });
