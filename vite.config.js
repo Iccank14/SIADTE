@@ -11,7 +11,11 @@ export default defineConfig({
     tailwindcss(),
   ],
   build: {
-    outDir: 'dist',      // <-- penting
-    emptyOutDir: true,   // bersihkan folder dist sebelum build
+    outDir: 'dist',      // hasil build ke folder dist
+    emptyOutDir: true,   // hapus isi folder dist sebelum build baru
   },
+  server: {
+    port: 5173,          // default Vite port, opsional
+    strictPort: true
+  }
 });
